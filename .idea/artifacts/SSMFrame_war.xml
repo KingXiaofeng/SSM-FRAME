@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SSMFrame:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SSMFrame.war">
+      <element id="artifact" artifact-name="SSMFrame:war exploded" />
+    </root>
+  </artifact>
+</component>

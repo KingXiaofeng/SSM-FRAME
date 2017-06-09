@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 全局异常捕捉 -->
+
+	<!-- Spring容器初始化完成监听器 -->
+	<bean class="com.ssm.frame.listener.ApplicationContextListener"
+		lazy-init="false"></bean>
+
+	<!-- ApplicationContext -->
+	<bean id="springContextUtil" class="com.ssm.frame.exception.GlobalExceptionResolver"></bean>
+
+</beans>
